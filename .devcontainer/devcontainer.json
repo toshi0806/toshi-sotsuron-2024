@@ -1,0 +1,14 @@
+{
+  "name": "smkwlab",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "settings": {
+    "textlint.nodePath": "/npm/node_modules"
+  },
+  "extensions": [
+    "james-yu.latex-workshop",
+    "GitHub.vscode-pull-request-github",
+    "taichi.vscode-textlint"
+  ]
+}

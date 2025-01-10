@@ -1,0 +1,77 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+        },
+        {
+            "name": "textlint",
+            "command": "textlint",
+            "args": [
+                "%DOC_EXT%"
+            ],
+        },
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "compile",
+            "tools": [
+                "latexmk",
+            ]
+        },
+        {
+            "name": "lint",
+            "tools": [
+                "textlint",
+            ]
+        },
+    ],
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.watch.delay": 1000,
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.fdb_latexmk",
+        "_minted*",
+        "*.nav",
+        "*.snm",
+        "*.vrb",
+        "*.run.xml",
+        "*.dvi",
+        "*.fdb_latexmk",
+        "*.fls",
+        "*.toc",
+        "*.bcf",
+        //"*.log",
+        //"*/*.log"
+    ],
+    "latex-workshop.view.pdf.external.viewer.command": "open",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "-ga",
+        "/Applications/Skim.app",
+        "-r",
+        "%PDF%"
+    ]
+}
