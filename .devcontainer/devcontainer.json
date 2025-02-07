@@ -1,6 +1,7 @@
 {
   "name": "smkwlab",
-  "image": "ghcr.io/smkwlab/texlive-ja-textlint:2023c-${localEnv:PROCESSOR_ARCHITECTURE==AMD64?alpine:debian}",
+//  "image": "ghcr.io/smkwlab/texlive-ja-textlint:2023c-${localEnv:PROCESSOR_ARCHITECTURE==AMD64?alpine:debian}",
+  "image": "ghcr.io/smkwlab/c-${localEnv:PROCESSOR_ARCHITECTURE}",
   "settings": {
     "textlint.nodePath": "/npm/node_modules"
   },
